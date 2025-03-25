@@ -1,0 +1,88 @@
+:root{
+    font-size: 2vw;
+
+    --fivepx: 0.31rem;
+    --eightpx: 0.5rem;
+    --tenpx: 0.625rem;
+    --fifteenpx: 0.94rem;
+    --twentypx: 1.25rem;
+    --twentyfivepx:1.56rem;
+    --thirtypx:1.86rem;
+    --thirtytwopx: 2rem;
+    --thirtysixpx: 2.25rem;
+    --fourtypx:2.5rem;
+    --fourty8px:3rem;
+    --fiftypx: 3.13rem;
+    --sixtypx: 3.75rem;
+    --seventypx: 4.375rem;
+    --eightypx:5rem;
+    --nintypx: 5.625rem;
+    --hundredpx:6.25rem;
+
+}
+header{
+    background-color: #4682B4; /* steelblue color code */
+    padding: var(--thirtypx);
+    text-align: center;
+    font-size: var(--thirtysixpx);
+    color: white;
+}
+main{
+display:inline-block;
+display: table;
+width: 100%;
+}
+main aside{
+    width: 30%;
+    background: slategrey;
+    padding: var(--twentypx);
+    display: table-cell;
+}
+
+main aside ul{
+    list-style-type: none;
+    padding: 0;
+}
+main aside ul li{
+    margin-bottom: var(--fivepx);
+    border-top: black;
+}
+main article{
+    border-color: calc(var(--fivepx - 4px)) black;
+    padding: var(--twentypx);
+    width: 78%;
+    background-color: white;
+    display: table-cell;
+}
+
+footer{
+    background-color: steelblue;
+    padding: var(--10px);
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 680px){    
+    header{
+      font-size: var(--thirtytwopx);
+    }
+    main aside{
+      display: none;
+    }
+    footer{
+      display: none;
+    }
+  
+    .pflex{
+      display: flex;
+    }
+    .gGrid{
+        display: grid;
+   } 
+}
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 0.4;
+    max-zoom: 2;
+    user-zoom: fixed;
+}
